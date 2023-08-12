@@ -200,7 +200,6 @@ function convertToNumber(number: string): number {
 </script>
 
 <template>
-    <h1>Roman Converter</h1>
     <p>Converts numbers to roman numerals and vice versa.</p>
     <form @submit.prevent="convert" >
         <label for="number">Number:</label>
