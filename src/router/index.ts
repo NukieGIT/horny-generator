@@ -10,7 +10,8 @@ const router = createRouter({
             name: 'home',
             component: HomeView,
             meta: {
-                title: 'Horny Generator'
+                title: 'Horny Generator',
+                transition: 'fade'
             }
         },
         {
@@ -18,7 +19,8 @@ const router = createRouter({
             name: 'roman',
             component: () => import('@/views/RomanConv.vue'),
             meta: {
-                title: 'Roman Numerals Converter'
+                title: 'Roman Numerals Converter',
+                transition: 'fade'
             }
         },
         {
@@ -26,7 +28,8 @@ const router = createRouter({
             name: 'radzio',
             component: () => import('@/views/RomanConv_radzio.vue'),
             meta: {
-                title: "Radzio's Roman Numerals Converter"
+                title: "Radzio's Roman Numerals Converter",
+                transition: 'fade'
             }
         },
         {
@@ -34,7 +37,8 @@ const router = createRouter({
             name: 'nukie',
             component: () => import('@/views/RomanConv_nukie.vue'),
             meta: {
-                title: "Nukie's Roman Numerals Converter"
+                title: "Nukie's Roman Numerals Converter",
+                transition: 'fade'
             }
         },
         {
@@ -42,7 +46,8 @@ const router = createRouter({
             name: "roman arabic numerals converter",
             component: () => import('@/views/RomanArabicConverter.vue'),
             meta: {
-                title: "Roman-Arabic Numerals Converter"
+                title: "Roman-Arabic Numerals Converter",
+                transition: 'fade'
             }
         },
         {
@@ -50,7 +55,8 @@ const router = createRouter({
             name: "RadziuScript development",
             component: () => import('@/views/RadziuScriptDev.vue'),
             meta: {
-                title: "RadziuScript development"
+                title: "RadziuScript development",
+                transition: 'fade'
             }
         }
     ]
