@@ -1,11 +1,11 @@
 :root {
     --p-white: #ffffff;
     --p-white-soft: #f8f8f8;
-    --p-white-mute: #f2f2f2;
+    --p-white-mute: #e6e6e6;
 
     --p-black: #181818;
     --p-black-soft: #222222;
-    --p-black-mute: #282828;
+    --p-black-mute: #2e2e2e;
 
     --p-yellow: #FEC260;
 
@@ -18,29 +18,42 @@
 
 /* semantic color variables for this project */
 :root {
-    --color-background: var(--vt-c-white);
-    --color-background-soft: var(--vt-c-white-soft);
-    --color-background-mute: var(--vt-c-white-mute);
+    --clr-background: var(--p-black);
+    --clr-background-soft: var(--p-black-soft);
+    --clr-background-mute: var(--p-black-mute);
 
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
+    --clr-heading: var(--p-white);
+    --clr-text-1: var(--p-white-soft);
+    --clr-text-2: var(--p-white-mute);
 
-    --color-heading: var(--vt-c-text-light-1);
-    --color-text: var(--vt-c-text-light-1);
+    --clr-accent-primary: var(--p-yellow);
+    --clr-accent-secondary: var(--p-pink)
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root {
-        --color-background: var(--vt-c-black);
-        --color-background-soft: var(--vt-c-black-soft);
-        --color-background-mute: var(--vt-c-black-mute);
+        --clr-background: var(--p-white);
+        --clr-background-soft: var(--p-white-soft);
+        --clr-background-mute: var(--p-white-mute);
+    
+        --clr-heading: var(--p-black);
+        --clr-text-1: var(--p-black-soft);
+        --clr-text-2: var(--p-black-mute);
 
-        --color-border: var(--vt-c-divider-dark-2);
-        --color-border-hover: var(--vt-c-divider-dark-1);
-
-        --color-heading: var(--vt-c-text-dark-1);
-        --color-text: var(--vt-c-text-dark-2);
+        --clr-accent-primary: var(--p-primary-purple);
+        --clr-accent-secondary: var(--p-secondary-purple);
     }
+}
+
+/* spacing variables */
+:root {
+    --space-xxs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
 }
 
 *,
@@ -48,4 +61,5 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }

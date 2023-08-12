@@ -9,9 +9,5 @@ defineProps<{
 </template>
 
 <style scoped>
-h1 {
-    color: red;
-    padding: 0;
-    margin: 0;
-}
+
 </style>
