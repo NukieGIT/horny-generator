@@ -7,7 +7,7 @@
     --p-black-soft: #222222;
     --p-black-mute: #2e2e2e;
 
-    --p-yellow: #FEC260;
+    --p-gold: #FEC260;
 
     --p-pink: #A12568;
 
@@ -26,7 +26,7 @@
     --clr-text-1: var(--p-white-soft);
     --clr-text-2: var(--p-white-mute);
 
-    --clr-accent-primary: var(--p-yellow);
+    --clr-accent-primary: var(--p-gold);
     --clr-accent-secondary: var(--p-pink)
 }
 
