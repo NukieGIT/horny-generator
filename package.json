@@ -10,13 +10,11 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/",
-    "docs": "jsdoc -c jsdoc.json"
+    "format": "prettier --write src/"
   },
   "dependencies": {
-    "better-docs": "^2.7.2",
+    "@vueuse/core": "^10.3.0",
     "pinia": "^2.1.3",
-    "taffydb": "^2.7.3",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
