@@ -17,7 +17,7 @@ function romanConverter(value: string): string {
         }
     }
 
-    let result: string = resultArray[0].toString();
+    const result: string = resultArray[0].toString();
     return result;
 }
 
@@ -37,8 +37,8 @@ function CheckRomans(penultimate:number, last:number): number {
 function MashRomans(mashes:number[]): number[] {
     for (let i = 0; i < mashes.length-1; i++) {
         if(mashes[i] == mashes[i+1]){
-            let temponnary = mashes[i] + mashes[i+1];
-            let index = mashes.indexOf(mashes[i+1]);
+            const temponnary = mashes[i] + mashes[i+1];
+            const index = mashes.indexOf(mashes[i+1]);
             mashes.splice(index, 1);
             mashes[i] = temponnary;
         }
@@ -48,12 +48,12 @@ function MashRomans(mashes:number[]): number[] {
 }
 
 function RegexRomons(regexes:string[]): string[] {
-    let finalRegex: string[] = [];
+    const finalRegex: string[] = [];
     for (let i = 0; i < regexes.length; i++) {
         if (regexes[i] == "_") {
-            let mud: string = regexes[i]+regexes[i+1];
+            const mud: string = regexes[i]+regexes[i+1];
             finalRegex.push(mud);
-            let index = regexes.indexOf(regexes[i+1]);
+            const index = regexes.indexOf(regexes[i+1]);
             regexes.splice(index, 1);
         }else{
             finalRegex.push(regexes[i]);

@@ -4,6 +4,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 <template>
     <main>
-        <HelloWorld msg="Hello Vue 47 + Audi R8 + TSX + Miat - Miat**2" />
+        <HelloWorld msg="Horny plaground 😳" />
     </main>
 </template>

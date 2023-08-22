@@ -3,7 +3,7 @@ import { ROMAN_NUMBERS } from "./base";
 
 
 
-let addedRomanNumbers = ref<Map<string, number>>(new Map());
+const addedRomanNumbers = ref<Map<string, number>>(new Map());
 
 function addingRomans(letter:string, Number:number) {
 
@@ -20,7 +20,7 @@ function addingRomans(letter:string, Number:number) {
 
 function multyRomans(operation: string) {
     const operationArray: string[] = operation.split('');
-    let finalOperation: number[] = [];
+    const finalOperation: number[] = [];
     let final: number = 0;
 
     operationArray.forEach(operative => {

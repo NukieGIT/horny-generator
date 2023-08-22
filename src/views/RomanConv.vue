@@ -200,13 +200,15 @@ function convertToNumber(number: string): number {
 </script>
 
 <template>
-    <p>Converts numbers to roman numerals and vice versa.</p>
-    <form @submit.prevent="convert" >
-        <label for="number">Number:</label>
-        <input type="text" id="number" v-model="userNumber"/><br>
-        <button type="submit">Convert</button>
-    </form>
-    <h1 v-if="result">result: {{ result }}</h1>
+    <div class="wrapper">
+        <p>Converts numbers to roman numerals and vice versa.</p>
+        <form @submit.prevent="convert" >
+            <label for="number">Number:</label>
+            <input type="text" id="number" v-model="userNumber"/><br>
+            <button type="submit">Convert</button>
+        </form>
+        <h1 v-if="result">result: {{ result }}</h1>
+    </div>
 </template>
 
 <style scoped></style>

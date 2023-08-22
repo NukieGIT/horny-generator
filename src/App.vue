@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Header from './components/Header.vue';
+import Header from '@/components/BasicHeader.vue';
 
 </script>
 
@@ -8,7 +8,12 @@ import Header from './components/Header.vue';
     <router-view v-slot="{ Component, route }">
         <transition :name="route.meta.transition || 'none'" mode="out-in">
             <div :key="route.name?.toString()">
-                <component :is="Component" />
+                <Suspense>
+                    <component :is="Component" />
+                    <template #fallback>
+                        <h1>loading...</h1>
+                    </template>
+                </Suspense>
             </div>
         </transition>
     </router-view>
@@ -17,11 +22,16 @@ import Header from './components/Header.vue';
 <style scoped>
     .fade-enter-active,
     .fade-leave-active {
-        transition: opacity 0.3s ease;
+        transition: opacity .2s ease;
     }
     .fade-enter-from,
     .fade-leave-to {
         opacity: 0;
     }
+
+    /* #wrapper {
+        perspective: 300px;
+        perspective-origin: 50% 50%;
+    } */
 
 </style>
