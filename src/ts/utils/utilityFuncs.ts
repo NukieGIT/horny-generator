@@ -32,9 +32,19 @@ function separateNumberIntoUnits(number: number): number[] {
     }
     return numArray.reverse();
 }
-    
+
+/**
+ * 
+ * @param dividend The number to divide
+ * @param divisor The number to divide by
+ * @returns Floored remainder of the division
+ */
+function mod(dividend: number, divisor: number): number {
+    return dividend - divisor * Math.floor(dividend / divisor);
+}    
 
 export {
     freezeMap,
-    separateNumberIntoUnits
+    separateNumberIntoUnits,
+    mod
 }

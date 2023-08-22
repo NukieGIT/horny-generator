@@ -4,12 +4,25 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+*:focus-visible {
+    outline: 1px solid var(--clr-accent-secondary);
+}
+
 body {
+    
     background-color: var(--clr-background);
     color: var(--clr-text-1);
     min-height: 100vh;
     width: 100%;
 }
+
+::-moz-selection {
+    background: var(--clr-accent-secondary);
+}
+
+::selection {
+    background: var(--clr-accent-secondary);
+  }
 
 a {
     color: blue;

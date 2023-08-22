@@ -1,11 +1,17 @@
 :root {
     --p-white: #ffffff;
-    --p-white-soft: #f8f8f8;
+    --p-white-soft: #f3f3f3;
     --p-white-mute: #e6e6e6;
+    --p-white-1: #d4d4d4;
+    --p-white-2: #c2c2c2;
+    --p-white-3: #b0b0b0;
 
-    --p-black: #181818;
-    --p-black-soft: #222222;
-    --p-black-mute: #2e2e2e;
+    --p-black: #131313;
+    --p-black-soft: #1a1a1a;
+    --p-black-mute: #202020;
+    --p-black-1: #262626;
+    --p-black-2: #2c2c2c;
+    --p-black-3: #303030;
 
     --p-gold: #FEC260;
 
@@ -21,13 +27,17 @@
     --clr-background: var(--p-black);
     --clr-background-soft: var(--p-black-soft);
     --clr-background-mute: var(--p-black-mute);
+    --clr-background-1: var(--p-black-1);
+    --clr-background-2: var(--p-black-2);
+    --clr-background-3: var(--p-black-3);
 
     --clr-heading: var(--p-white);
     --clr-text-1: var(--p-white-soft);
     --clr-text-2: var(--p-white-mute);
+    --clr-text-3: var(--p-white-1);
 
     --clr-accent-primary: var(--p-gold);
-    --clr-accent-secondary: var(--p-pink)
+    --clr-accent-secondary: var(--p-pink);
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,13 +45,17 @@
         --clr-background: var(--p-white);
         --clr-background-soft: var(--p-white-soft);
         --clr-background-mute: var(--p-white-mute);
+        --clr-background-1: var(--p-white-1);
+        --clr-background-2: var(--p-white-2);
+        --clr-background-3: var(--p-white-3);
     
         --clr-heading: var(--p-black);
         --clr-text-1: var(--p-black-soft);
         --clr-text-2: var(--p-black-mute);
+        --clr-text-3: var(--p-black-1);
 
-        --clr-accent-primary: var(--p-primary-purple);
-        --clr-accent-secondary: var(--p-secondary-purple);
+        --clr-accent-primary: var(--p-gold);
+        --clr-accent-secondary: var(--p-pink);
     }
 }
 

@@ -1,13 +1,19 @@
+<script setup lang="ts">
+
+
+
+</script>
+
 <template>
     <header>
         <h1>Horny Generator</h1>
         <nav>
-            <RouterLink :to="{ name: 'home' }">Home</RouterLink>
-            <RouterLink :to="{ name: 'roman' }">Roman Converter</RouterLink>
-            <RouterLink :to="{ name: 'RadziuScript development' }">RS playground</RouterLink>
+            <RouterLink :to="{ name: 'home' }">home</RouterLink>
+            <RouterLink :to="{ name: 'roman' }">roman converter</RouterLink>
+            <RouterLink :to="{ name: 'RadziuScript development' }">genshin API playground</RouterLink>
             <!-- <RouterLink to="/radzio">Radzio hahahahhahahahaahaahahahahahahahahahahhaahhahahahahahahahhahahahahahahaaha</RouterLink>
             <RouterLink to="/nukie">NUKIŚ KUKIŚ UWU BAKA GIWL</RouterLink> -->
-            <RouterLink :to="{ name: 'roman arabic numerals converter' }">Roman-Arabic Numerals Converter</RouterLink>
+            <RouterLink :to="{ name: 'roman arabic numerals converter' }">roman-arabic numerals converter</RouterLink>
         </nav>
     </header>
 </template>
@@ -24,6 +30,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 nav {
@@ -36,6 +43,7 @@ nav {
 
 a {
     color: var(--clr-text-2);
+    text-transform: capitalize;
 }
 
 a:hover {

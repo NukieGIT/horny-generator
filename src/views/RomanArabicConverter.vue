@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import { convert as conversionAPI } from "@/ts/romanConversionAPI/conversionAPI";
 import { addingRomans, addedRomanNumbers } from "@/ts/romanConversionAPI/romanToArabicExtension";
+import UserInput from '@/components/Inputs/UserInput.vue';
+import UserButton from '@/components/Inputs/UserButton.vue';
 const userNumber = ref<string>('');
 
 function convert() {
@@ -24,9 +26,8 @@ function addNumber() {
     <div class="container">
         <div class="split">
             <form @submit.prevent="convert" >
-                <label for="number">Number:</label>
-                <input type="text" autocomplete="off" id="number" v-model="userNumber"/><br>
-                <button type="submit">Convert</button>
+                <UserInput placeholder="Number" type="text" autocomplete="off" id="number" autofocus v-model="userNumber"/><br>
+                <UserButton type="submit">Convert</UserButton>
             </form>
             <br>
             <h3>Testing Grounds</h3>
