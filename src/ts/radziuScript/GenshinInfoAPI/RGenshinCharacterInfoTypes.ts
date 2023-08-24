@@ -51,21 +51,21 @@ export interface ICharacterCardProps {
 }
 
 export const IGenshinCharacterInfoDefault: IGenshinCharacterInfo = {
-    name: "no name",
-    title: "no title",
-    vision: "no vision",
-    weapon: "no weapon",
-    gender: "no gender",
-    nation: "no nation",
-    affiliation: "no affiliation",
+    name: 'no name',
+    title: 'no title',
+    vision: 'no vision',
+    weapon: 'no weapon',
+    gender: 'no gender',
+    nation: 'no nation',
+    affiliation: 'no affiliation',
     rarity: 0,
-    release: "no release",
-    constellation: "no constellation",
-    birthday: "no birthday",
-    description: "no description",
+    release: 'no release',
+    constellation: 'no constellation',
+    birthday: 'no birthday',
+    description: 'no description',
     skillTalents: [],
     passiveTalents: [],
     constellations: [],
-    vision_key: "no vision key",
-    weapon_type: "no weapon type"
-};
+    vision_key: 'no vision key',
+    weapon_type: 'no weapon type'
+}

@@ -1,70 +1,61 @@
 <template>
     <div id="heroCardInfo">
         <Transition name="slide-from-right" mode="out-in">
-            <img id="heroCardImg" :src="characterCard" v-if="show">
+            <img id="heroCardImg" :src="characterCard" v-if="show" />
         </Transition>
         <button @click="show = !show">Działaj</button>
         <ul>
+            <li>Name: {{ characterData.name }}</li>
+            <li>Description: {{ characterData.description }}</li>
+            <li>Gender: {{ characterData.gender }}</li>
             <li>
-                Name: {{ characterData.name }}
+                Rarity:
+                <span
+                    :class="{
+                        'rarity-5': characterData.rarity === 5,
+                        'rarity-4': characterData.rarity === 4
+                    }"
+                >
+                    {{ getCharacterStars }}
+                </span>
             </li>
+            <li>Weapon: {{ characterData.weapon }}</li>
             <li>
-                Description: {{ characterData.description }}
+                Vision Element:
+                <span :class="getVisionColorClass">{{ characterData.vision }}</span>
             </li>
-            <li>
-                Gender: {{ characterData.gender }}
-            </li>
-            <li>
-                Rarity: <span :class="{ 'rarity-5': characterData.rarity === 5, 'rarity-4': characterData.rarity === 4 }">{{ getCharacterStars }} </span>
-            </li>
-            <li>
-                Weapon: {{ characterData.weapon }}
-            </li>
-            <li>
-                Vision Element: <span :class="getVisionColorClass"> {{ characterData.vision }} </span>
-            </li>
-            <li>
-                Nation: {{ characterData.nation }}
-            </li>
-            <li>
-                Constellation: {{ characterData.constellation }}
-            </li>
-            <li>
-                Affiliation: {{ characterData.affiliation }}
-            </li>
-            <li>
-                Birthday: {{ characterData.birthday }}
-            </li>
+            <li>Nation: {{ characterData.nation }}</li>
+            <li>Constellation: {{ characterData.constellation }}</li>
+            <li>Affiliation: {{ characterData.affiliation }}</li>
+            <li>Birthday: {{ characterData.birthday }}</li>
         </ul>
     </div>
 </template>
 
 <script setup lang="ts">
-import type { ICharacterCardProps } from '@/ts/radziuScript/GenshinInfoAPI/RGenshinCharacterInfoTypes';
-import { computed, ref } from 'vue';
+import type { ICharacterCardProps } from '@/ts/radziuScript/GenshinInfoAPI/RGenshinCharacterInfoTypes'
+import { computed, ref } from 'vue'
 
-const props = defineProps<ICharacterCardProps>();
+const props = defineProps<ICharacterCardProps>()
 
-const show = ref<boolean>(true);
+const show = ref<boolean>(true)
 
 const getCharacterStars = computed(() => {
-    return "★".repeat(props.characterData.rarity);
-});
+    return '★'.repeat(props.characterData.rarity)
+})
 
 const getVisionColorClass = computed(() => ({
-    "pyro": props.characterData.vision == "Pyro",
-    "hydro": props.characterData.vision == "Hydro",
-    "electro": props.characterData.vision == "Electro",
-    "anemo": props.characterData.vision == "Anemo",
-    "cryo": props.characterData.vision == "Cryo",
-    "geo": props.characterData.vision == "Geo",
-    "dendro": props.characterData.vision == "Dendro",
-}));
-
+    pyro: props.characterData.vision == 'Pyro',
+    hydro: props.characterData.vision == 'Hydro',
+    electro: props.characterData.vision == 'Electro',
+    anemo: props.characterData.vision == 'Anemo',
+    cryo: props.characterData.vision == 'Cryo',
+    geo: props.characterData.vision == 'Geo',
+    dendro: props.characterData.vision == 'Dendro'
+}))
 </script>
 
 <style scoped>
-
 .slide-from-right-enter-active,
 .slide-from-right-leave-active {
     transition: all 0.5s ease;
@@ -75,7 +66,6 @@ const getVisionColorClass = computed(() => ({
     transform: translateX(45%);
     opacity: 0;
 }
-
 
 .rarity-4 {
     color: rgb(139, 62, 202);

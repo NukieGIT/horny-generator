@@ -2,7 +2,7 @@ class RSystem {
     constructor() {}
 
     public Log(logger: any): void {
-        console.log(logger);
+        console.log(logger)
     }
 }
 
