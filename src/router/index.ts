@@ -43,28 +43,28 @@ const router = createRouter({
         },
         {
             path: '/roman-arabic-numerals-converter',
-            name: "roman arabic numerals converter",
+            name: 'roman arabic numerals converter',
             component: () => import('@/views/RomanArabicConverter.vue'),
             meta: {
-                title: "Roman-Arabic Numerals Converter",
+                title: 'Roman-Arabic Numerals Converter',
                 transition: 'fade'
             }
         },
         {
             path: '/rsdev',
-            name: "RadziuScript development",
+            name: 'RadziuScript development',
             component: () => import('@/views/RadziuScriptDev.vue'),
             meta: {
-                title: "RadziuScript development",
+                title: 'RadziuScript development',
                 transition: 'fade'
             }
         }
     ]
 })
 
-router.afterEach((to, from) => {
+router.afterEach((to) => {
     nextTick(() => {
-        document.title = to.meta.title ? to.meta.title : "Horny Generator";
+        document.title = to.meta.title ? to.meta.title : 'Horny Generator'
     })
 })
 

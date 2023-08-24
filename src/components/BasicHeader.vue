@@ -1,8 +1,4 @@
-<script setup lang="ts">
-
-
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
     <header>
@@ -10,16 +6,19 @@
         <nav>
             <RouterLink :to="{ name: 'home' }">home</RouterLink>
             <RouterLink :to="{ name: 'roman' }">roman converter</RouterLink>
-            <RouterLink :to="{ name: 'RadziuScript development' }">genshin API playground</RouterLink>
+            <RouterLink :to="{ name: 'RadziuScript development' }">
+                genshin API playground
+            </RouterLink>
             <!-- <RouterLink to="/radzio">Radzio hahahahhahahahaahaahahahahahahahahahahhaahhahahahahahahahhahahahahahahaaha</RouterLink>
             <RouterLink to="/nukie">NUKIŚ KUKIŚ UWU BAKA GIWL</RouterLink> -->
-            <RouterLink :to="{ name: 'roman arabic numerals converter' }">roman-arabic numerals converter</RouterLink>
+            <RouterLink :to="{ name: 'roman arabic numerals converter' }">
+                roman-arabic numerals converter
+            </RouterLink>
         </nav>
     </header>
 </template>
 
 <style scoped>
-
 header {
     /* border-bottom: 1px solid white; */
     background-color: var(--clr-background);
@@ -56,5 +55,4 @@ a.router-link-active {
     text-decoration: underline;
     text-underline-offset: var(--space-xs);
 }
-
 </style>

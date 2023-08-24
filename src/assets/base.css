@@ -13,13 +13,13 @@
     --p-black-2: #2c2c2c;
     --p-black-3: #303030;
 
-    --p-gold: #FEC260;
+    --p-gold: #fec260;
 
-    --p-pink: #A12568;
+    --p-pink: #a12568;
 
-    --p-secondary-purple: #3B185F;
+    --p-secondary-purple: #3b185f;
 
-    --p-primary-purple: #2A0944;
+    --p-primary-purple: #2a0944;
 }
 
 /* semantic color variables for this project */
@@ -48,7 +48,7 @@
         --clr-background-1: var(--p-white-1);
         --clr-background-2: var(--p-white-2);
         --clr-background-3: var(--p-white-3);
-    
+
         --clr-heading: var(--p-black);
         --clr-text-1: var(--p-black-soft);
         --clr-text-2: var(--p-black-mute);

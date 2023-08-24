@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import Header from '@/components/BasicHeader.vue';
-
+import Header from '@/components/BasicHeader.vue'
 </script>
 
 <template>
@@ -20,18 +19,17 @@ import Header from '@/components/BasicHeader.vue';
 </template>
 
 <style scoped>
-    .fade-enter-active,
-    .fade-leave-active {
-        transition: opacity .2s ease;
-    }
-    .fade-enter-from,
-    .fade-leave-to {
-        opacity: 0;
-    }
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
 
-    /* #wrapper {
+/* #wrapper {
         perspective: 300px;
         perspective-origin: 50% 50%;
     } */
-
 </style>

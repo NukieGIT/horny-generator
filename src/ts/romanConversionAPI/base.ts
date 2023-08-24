@@ -1,4 +1,4 @@
-import { freezeMap } from "@/ts/utils/utilityFuncs";
+import { freezeMap } from '@/ts/utils/utilityFuncs'
 
 const ROMAN_NUMBERS_BASE: Map<string, number> = new Map([
     ['I', 1],
@@ -13,9 +13,9 @@ const ROMAN_NUMBERS_BASE: Map<string, number> = new Map([
     ['_L', 50000],
     ['_C', 100000],
     ['_D', 500000],
-    ['_M', 1000000],
-]);
+    ['_M', 1000000]
+])
 
-const ROMAN_NUMBERS: Map<string, number> = freezeMap(ROMAN_NUMBERS_BASE);
+const ROMAN_NUMBERS: Map<string, number> = freezeMap(ROMAN_NUMBERS_BASE)
 
 export { ROMAN_NUMBERS }
