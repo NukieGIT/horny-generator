@@ -57,7 +57,7 @@ import UserInput from '@/components/Inputs/UserInput.vue'
 import { mod, uuidWrap } from '@/ts/utils/utilityFuncs'
 import { HighlightedPartialWord, type ISuggestionInputControls } from './SuggestionInputTypes'
 import type { IUUIDItem } from '@/ts/utils/utilityFuncs'
-// TODO: keyboard input breaks when input value is equal to "ku"
+
 const props = withDefaults(
     defineProps<{
         modelValue?: string
