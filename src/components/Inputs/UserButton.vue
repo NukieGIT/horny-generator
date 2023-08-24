@@ -20,9 +20,12 @@
         background-color 0.1s ease-in-out;
 }
 
+.button:hover {
+    background-color: var(--clr-background-mute);
+}
+
 .button:active {
     border-color: var(--clr-background-3);
-    background-color: var(--clr-background-mute);
     border-radius: 3px;
 }
 </style>
