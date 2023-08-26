@@ -49,6 +49,10 @@ export interface IUUIDItem<T> {
     item: T
 }
 
+export function uuidWrapSingle<T>(toWrap: T): IUUIDItem<T> {
+    return { uuid: uuidv4(), item: toWrap }
+}
+
 export function uuidWrap<T>(toWrap: T[]): IUUIDItem<T>[] {
     return toWrap.map((item) => ({ uuid: uuidv4(), item }))
 }
