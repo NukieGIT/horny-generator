@@ -35,6 +35,7 @@
     --clr-text-1: var(--p-white-soft);
     --clr-text-2: var(--p-white-mute);
     --clr-text-3: var(--p-white-1);
+    --clr-text-disabled: var(--p-white-3);
 
     --clr-accent-primary: var(--p-gold);
     --clr-accent-secondary: var(--p-pink);
@@ -53,6 +54,7 @@
         --clr-text-1: var(--p-black-soft);
         --clr-text-2: var(--p-black-mute);
         --clr-text-3: var(--p-black-1);
+        --clr-text-disabled: var(--p-black-3);
 
         --clr-accent-primary: var(--p-gold);
         --clr-accent-secondary: var(--p-pink);

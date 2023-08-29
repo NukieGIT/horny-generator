@@ -13,6 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@dice-roller/rpg-dice-roller": "^5.4.1",
+    "@dice-roller/vue": "^1.2.0",
     "@vueuse/core": "^10.3.0",
     "fuzzysort": "^2.0.4",
     "neverthrow": "^6.0.0",

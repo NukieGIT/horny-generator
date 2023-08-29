@@ -1,45 +1,47 @@
 <template>
-
-<div class="container">
-    <div class="tabs">
-        <slot :methods="{ switchCurrentTab }" :currentTab="getCurrentTab">
-            <div v-for="tab in tabs" @click="switchCurrentTab(tab)" class="tab" :class="{ selected: tab.uuid === currentTab.uuid }">
-                {{ tab.item.title }}
-            </div>
-        </slot>
+    <div class="container">
+        <div class="tabs">
+            <slot :methods="{ switchCurrentTab }" :currentTab="getCurrentTab">
+                <div
+                    v-for="tab in tabs"
+                    :key="tab.uuid"
+                    @click="switchCurrentTab(tab)"
+                    class="tab"
+                    :class="{ selected: tab.uuid === currentTab.uuid }"
+                >
+                    {{ tab.item.title }}
+                </div>
+            </slot>
+        </div>
+        <div class="view">
+            <KeepAlive>
+                <component :key="currentTab.uuid" :is="currentTab.item.component" />
+            </KeepAlive>
+        </div>
     </div>
-    <div class="view">
-        <KeepAlive>
-            <component :is="currentTab.item.component" />
-        </KeepAlive>
-    </div>
-</div>
-
 </template>
 
 <script setup lang="ts">
-import { computed, shallowRef } from 'vue';
-import type { TabComponent } from '@/components/Tabs/TabsTypes';
-import type { IUUIDItem } from '@/ts/utils/utilityFuncs';
+import { computed, shallowRef } from 'vue'
+import type { TabComponent } from '@/components/Tabs/TabsTypes'
+import type { IUUIDItem } from '@/ts/utils/utilityFuncs'
 
 const props = defineProps<{
-    tabs: IUUIDItem<TabComponent>[];
-}>();
+    tabs: IUUIDItem<TabComponent>[]
+}>()
 
 function switchCurrentTab(tab: IUUIDItem<TabComponent>) {
-    currentTab.value = tab;
+    currentTab.value = tab
 }
 
-const currentTab = shallowRef(props.tabs[0]);
+const currentTab = shallowRef(props.tabs[0])
 
 const getCurrentTab = computed(() => {
-    return currentTab.value;
+    return currentTab.value
 })
-
 </script>
 
 <style scoped>
-
 .container {
     display: flex;
     flex-direction: column;
@@ -71,5 +73,4 @@ const getCurrentTab = computed(() => {
 .tab:hover {
     background-color: var(--clr-background-1);
 }
-
 </style>

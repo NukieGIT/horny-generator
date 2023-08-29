@@ -1,6 +1,6 @@
 <template>
     <input
-        type="text"
+        type="color"
         class="input"
         :value="modelValue"
         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
@@ -19,15 +19,25 @@ defineEmits<{
 
 <style scoped>
 .input {
-    color: var(--clr-text-1);
-    width: 400px;
-    padding: 10px 10px;
+    min-width: 70px;
+    height: 50px;
+    padding: 5px;
     font-size: 18px;
     margin: var(--space-xs);
     background-color: var(--clr-background-soft);
     border: 1px solid var(--clr-background-1);
     outline: none;
-    transition: border-color 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    transition: border-color 0.1s ease-in-out, border-radius 0.1s ease-in-out,
+        background-color 0.1s ease-in-out;
+}
+
+.input:hover,
+.input:focus-visible {
+    background-color: var(--clr-background-mute);
+}
+
+.input:hover {
+    cursor: pointer;
 }
 
 .input:disabled {

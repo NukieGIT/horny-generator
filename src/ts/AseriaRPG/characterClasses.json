@@ -1,0 +1,351 @@
+[
+    {
+        "name": "enginner",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "intelligence",
+                "boostAmount": 3,
+                "attributes": [
+                    {
+                        "attribute": "runeStone",
+                        "boostAmount": 3
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "mageKiller",
+                "type": "attack",
+                "boostAmount": 3
+            }
+        ]
+    },
+    {
+        "name": "druid",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "wisdom",
+                "boostAmount": 1,
+                "attributes": [
+                    {
+                        "attribute": "animalHandling",
+                        "boostAmount": 5
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "monk",
+                "type": "defense",
+                "boostAmount": 3
+            }
+        ]
+    },
+    {
+        "name": "assasin",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "intelligence",
+                "boostAmount": 4,
+                "attributes": [
+                    {
+                        "attribute": "stealth",
+                        "boostAmount": 6
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "traveler",
+                "type": "attack",
+                "boostAmount": 3
+            }
+        ]
+    },
+    {
+        "name": "healer",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "wisdom",
+                "boostAmount": 3,
+                "attributes": [
+                    {
+                        "attribute": "medicine",
+                        "boostAmount": 5
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "healer",
+                "type": "heal",
+                "boostAmount": 9
+            }
+        ]
+    },
+    {
+        "name": "traveler",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "strength",
+                "boostAmount": 1,
+                "attributes": [
+                    {
+                        "attribute": "survival",
+                        "boostAmount": 3
+                    }
+                ]
+            }
+        ],
+        "classBoosts": []
+    },
+    {
+        "name": "monk",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "strength",
+                "boostAmount": 3,
+                "attributes": [
+                    {
+                        "attribute": "religion",
+                        "boostAmount": 3
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "healer",
+                "type": "attack",
+                "boostAmount": 3
+            }
+        ]
+    },
+    {
+        "name": "mageKiller",
+        "isMagic": false,
+        "isToki": true,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "intelligence",
+                "boostAmount": 5,
+                "attributes": [
+                    {
+                        "attribute": "mana",
+                        "boostAmount": 3
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "wizard",
+                "type": "attack",
+                "boostAmount": 6
+            }
+        ]
+    },
+    {
+        "name": "saber",
+        "isMagic": false,
+        "isToki": true,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "dexterity",
+                "boostAmount": 3,
+                "attributes": [
+                    {
+                        "attribute": "mana",
+                        "boostAmount": 3
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "saber",
+                "type": "attack",
+                "boostAmount": 6
+            }
+        ]
+    },
+    {
+        "name": "wizard",
+        "isMagic": true,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "intelligence",
+                "boostAmount": 6,
+                "attributes": [
+                    {
+                        "attribute": "mana",
+                        "boostAmount": 3
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "duelist",
+                "type": "attack",
+                "boostAmount": 3
+            }
+        ]
+    },
+    {
+        "name": "duelist",
+        "isMagic": true,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "strength",
+                "boostAmount": 2,
+                "attributes": [
+                    {
+                        "attribute": "mana",
+                        "boostAmount": 5
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "mageKiller",
+                "type": "defense",
+                "boostAmount": 6
+            }
+        ]
+    },
+    {
+        "name": "necromancer",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "Kemuri",
+        "statsBoosts": [
+            {
+                "statName": "wisdom",
+                "boostAmount": 4,
+                "attributes": [
+                    {
+                        "attribute": "mana",
+                        "boostAmount": 2
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "druid",
+                "type": "attack",
+                "boostAmount": 3
+            }
+        ]
+    },
+    {
+        "name": "rogue",
+        "isMagic": false,
+        "isToki": true,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "dexterity",
+                "boostAmount": 1,
+                "attributes": [
+                    {
+                        "attribute": "stealth",
+                        "boostAmount": 4
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "engineer",
+                "type": "defense",
+                "boostAmount": 9
+            }
+        ]
+    },
+
+
+
+    
+
+    {
+        "name": "test1",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "dexterity",
+                "boostAmount": 0,
+                "attributes": [
+                    {
+                        "attribute": "stealth",
+                        "boostAmount": 0
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "test2",
+                "type": "attack",
+                "boostAmount": 0
+            }
+        ]
+    },
+    {
+        "name": "test2",
+        "isMagic": false,
+        "isToki": false,
+        "isFamily": "",
+        "statsBoosts": [
+            {
+                "statName": "dexterity",
+                "boostAmount": 0,
+                "attributes": [
+                    {
+                        "attribute": "stealth",
+                        "boostAmount": 0
+                    }
+                ]
+            }
+        ],
+        "classBoosts": [
+            {
+                "className": "test1",
+                "type": "defense",
+                "boostAmount": 0
+            }
+        ]
+    }
+]

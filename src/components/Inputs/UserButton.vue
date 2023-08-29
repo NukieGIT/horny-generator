@@ -20,8 +20,13 @@
         background-color 0.1s ease-in-out;
 }
 
-.button:hover {
+.button:hover,
+.button:focus-visible {
     background-color: var(--clr-background-mute);
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 .button:active {

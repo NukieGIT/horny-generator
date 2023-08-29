@@ -1,0 +1,160 @@
+[
+    {
+        "surname": "Pendragon",
+        "chance": 10,
+        "boosts": [
+            {
+                "statName": "strenght",
+                "boostAmount": 5
+            }
+        ],
+        "change": [
+            {
+                "normalAbilityCategory": "",
+                "afterChangeAbilityCategory": ""
+            }
+        ],
+        "allowedRace":[
+            "dragonBorn"
+        ]
+    },
+    {
+        "surname": "Quetzalcoatl",
+        "chance": 9,
+        "boosts": [
+            {
+                "statName": "wisdom",
+                "boostAmount": 7
+            }
+        ],
+        "change": [
+            {
+                "normalAbilityCategory": "",
+                "afterChangeAbilityCategory": ""
+            }
+        ],
+        "allowedRace":[
+            "human",
+            "dragonBorn"
+        ]
+    },
+    {
+        "surname": "Kamikura",
+        "chance": 70,
+        "boosts": [
+            {
+                "statName": "dexterity",
+                "boostAmount": 2
+            }
+        ],
+        "change": [
+            {
+                "normalAbilityCategory": "",
+                "afterChangeAbilityCategory": ""
+            }
+        ],
+        "allowedRace":[
+            "devilBorn",
+            "human",
+            "oni"
+        ]
+    },
+    {
+        "surname": "Shirou",
+        "chance": 7,
+        "boosts": [
+            {
+                "statName": "intelligence",
+                "boostAmount": 2
+            }
+        ],
+        "change": [
+            {
+                "normalAbilityCategory": "",
+                "afterChangeAbilityCategory": ""
+            }
+        ],
+        "allowedRace":[
+            "elf",
+            "kemonomimi"
+        ]
+    },
+    {
+        "surname": "Snezhnaya",
+        "chance": 2,
+        "boosts": [
+            {
+                "statName": "mana",
+                "boostAmount": 600
+            }
+        ],
+        "change": [
+            {
+                "normalAbilityCategory": "",
+                "afterChangeAbilityCategory": ""
+            }
+        ],
+        "allowedRace":[
+            "human"
+        ]
+    },
+    {
+        "surname": "Kemuri",
+        "chance": 2,
+        "boosts": [
+            {
+                "statName": "mana",
+                "boostAmount": 700
+            }
+        ],
+        "change": [
+            {
+                "normalAbilityCategory": "bornWisdom",
+                "afterChangeAbilityCategory": "magic"
+            }
+        ],
+        "allowedRace":[
+            "devilBorn"
+        ]
+    },
+    {
+        "surname": "47",
+        "chance": 1,
+        "boosts": [
+            {
+                "statName": "strenght",
+                "boostAmount": 47
+            },
+            {
+                "statName": "dexterity",
+                "boostAmount": 47
+            },
+            {
+                "statName": "intelligence",
+                "boostAmount": 47
+            },
+            {
+                "statName": "wisdom",
+                "boostAmount": 47
+            },
+            {
+                "statName": "mana",
+                "boostAmount": 47000
+            }
+        ],
+        "change": [
+            {
+                "normalAbilityCategory": "",
+                "afterChangeAbilityCategory": ""
+            }
+        ],
+        "allowedRace":[
+            "devilBorn",
+            "human",
+            "oni",
+            "kemonomimi",
+            "elf",
+            "dragonBorn"
+        ]
+    }
+]

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import SuggestionInput from '@/components/Inputs/SuggestionInput/SuggestionInput.vue'
 import { onMounted, ref } from 'vue'
-import { v4 } from "uuid";
+import { v4 } from 'uuid'
 import { fetchCharacterCard, fetchCharacterData } from '@/ts/radziuScript/GenshinInfoAPI/RGenshin'
 import {
     IGenshinCharacterInfoDefault,
@@ -33,9 +33,7 @@ async function fetchCharacter(value: string) {
     <div>
         <form @submit.prevent>
             <SuggestionInput @update:submit-value="fetchCharacter($event)" :results-data="data!" />
-            <UserButton @click="data.push(`test+${v4()}`)">
-                Test
-            </UserButton>
+            <UserButton @click="data.push(`test+${v4()}`)">Test</UserButton>
         </form>
         <CharacterCard v-bind="characterCardProps" />
     </div>

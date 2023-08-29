@@ -1,0 +1,115 @@
+[
+    {
+        "name": "elf",
+        "boosts":[
+            {
+                "statName": "intelligence",
+                "boostAmount": 3
+            },
+            {
+                "statName": "mana",
+                "boostAmount": 300
+            }
+        ],
+        "allowedAbilityCategories": [
+            "magic"
+        ]
+    },
+    {
+        "name": "oni",
+        "boosts":[
+            {
+                "statName": "strength",
+                "boostAmount": 4
+            },
+            {
+                "statName": "mana",
+                "boostAmount": 600
+            }
+        ],
+        "allowedAbilityCategories": [
+            "toki"
+        ]
+    },
+    {
+        "name": "human",
+        "boosts":[
+            {
+                "statName": "dexterity",
+                "boostAmount": 4
+            },
+            {
+                "statName": "wisdom",
+                "boostAmount": 6
+            }
+        ],
+        "allowedAbilityCategories": [
+            "magic",
+            "toki"
+        ]
+    },
+    {
+        "name": "dragonBorn",
+        "boosts":[
+            {
+                "statName": "dexterity",
+                "boostAmount": 5
+            },
+            {
+                "statName": "wisdom",
+                "boostAmount": 2
+            }
+        ],
+        "allowedAbilityCategories": [
+            "bornWisdom"
+        ]
+    },
+    {
+        "name": "reincarnated",
+        "boosts":[
+            {
+                "statName": "intelligence",
+                "boostAmount": 7
+            },
+            {
+                "statName": "mana",
+                "boostAmount": 200
+            }
+        ],
+        "allowedAbilityCategories": [
+            "toki"
+        ]
+    },
+    {
+        "name": "devilBorn",
+        "boosts":[
+            {
+                "statName": "strength",
+                "boostAmount": 5
+            },
+            {
+                "statName": "dexterity",
+                "boostAmount": 1
+            }
+        ],
+        "allowedAbilityCategories": [
+            "bornWisdom"
+        ]
+    },
+    {
+        "name": "kemonomimi",
+        "boosts":[
+            {
+                "statName": "wisdom",
+                "boostAmount": 7
+            },
+            {
+                "statName": "strength",
+                "boostAmount": 6
+            }
+        ],
+        "allowedAbilityCategories": [
+            "magic"
+        ]
+    }
+]

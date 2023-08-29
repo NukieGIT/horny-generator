@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
+import type { IChance } from '../AseriaRPG/characterCreatorTypes'
 
 /**
  * Freezes a map so that it can't be modified
@@ -55,4 +56,47 @@ export function uuidWrapSingle<T>(toWrap: T): IUUIDItem<T> {
 
 export function uuidWrap<T>(toWrap: T[]): IUUIDItem<T>[] {
     return toWrap.map((item) => ({ uuid: uuidv4(), item }))
+}
+
+
+/**
+ *
+ * @param arr cumulative sum array
+ * @returns random element based on chance
+ */
+export function getRandomElemBasedOnChance<T extends IChance>(arr: T[]): T {
+    const chancesSum = arr[arr.length - 1].chance
+    const randNum = Math.random() * chancesSum
+    let randomSurname: T
+    let lastVal = 0
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i]
+
+        if (lastVal <= randNum && randNum < element.chance) {
+            randomSurname = element
+            break
+        }
+        lastVal = element.chance
+    }
+    return randomSurname!
+}
+
+export function transformToCumulativeSums<T extends IChance>(arr: T[]): T[] {
+    let sum = 0
+
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i]
+        sum += element.chance
+        element.chance = sum
+    }
+
+    return arr
+}
+
+export function chunkify<T>(arr: T[], n: number): T[][] {
+    let chunks: T[][] = [];
+    for (let i = n; i > 0; i--) {
+        chunks.push(arr.splice(0, Math.ceil(arr.length / i)));
+    }
+    return chunks;
 }

@@ -197,7 +197,9 @@ function moveHoverInDirection(direction: 1 | -1): void {
 
     if (currentlyFocusedResult.value === undefined) {
         if (direction === 1) {
-            let resultElem: HTMLLIElement | undefined = findHoverElem(filteredResults.value[0].target)
+            let resultElem: HTMLLIElement | undefined = findHoverElem(
+                filteredResults.value[0].target
+            )
             if (resultElem === undefined) return
             hover(resultElem, filteredResults.value[0].target)
             currentlyFocusedResult.value!.scrollIntoView({ block: 'nearest' })
@@ -223,7 +225,7 @@ function moveHoverInDirection(direction: 1 | -1): void {
 }
 
 function findHoverElem(value: string): HTMLLIElement | undefined {
-    if (result.value === undefined) return;
+    if (result.value === undefined) return
     let resultElem: HTMLLIElement | undefined
     for (const elem of result.value) {
         if (elem.dataset.target === value) {

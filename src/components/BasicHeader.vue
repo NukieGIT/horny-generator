@@ -5,7 +5,8 @@
         <h1>Horny Generator</h1>
         <nav>
             <RouterLink :to="{ name: 'home' }">home</RouterLink>
-            <RouterLink :to="{ name: 'roman' }">roman converter</RouterLink>
+            <RouterLink :to="{ name: 'aseria rpg' }">aseria RPG</RouterLink>
+            <!-- <RouterLink :to="{ name: 'roman' }">roman converter</RouterLink> -->
             <RouterLink :to="{ name: 'RadziuScript development' }">
                 genshin API playground
             </RouterLink>
@@ -13,6 +14,9 @@
             <RouterLink to="/nukie">NUKIŚ KUKIŚ UWU BAKA GIWL</RouterLink> -->
             <RouterLink :to="{ name: 'roman arabic numerals converter' }">
                 roman-arabic numerals converter
+            </RouterLink>
+            <RouterLink :to="{ name: 'Qlus Map Editor' }">
+                Qlus Map Editor
             </RouterLink>
         </nav>
     </header>

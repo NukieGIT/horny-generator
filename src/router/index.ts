@@ -15,6 +15,15 @@ const router = createRouter({
             }
         },
         {
+            path: '/aseria-rpg',
+            name: 'aseria rpg',
+            component: () => import('@/views/AseriaRPG/AseriaRPGmain.vue'),
+            meta: {
+                title: 'Aseria RPG',
+                transition: 'fade'
+            }
+        },
+        {
             path: '/roman',
             name: 'roman',
             component: () => import('@/views/RomanConv.vue'),
@@ -57,6 +66,15 @@ const router = createRouter({
             meta: {
                 title: 'RadziuScript development',
                 transition: 'fade'
+            }
+        },
+        {
+            path: '/qlusmap',
+            name: 'Qlus Map Editor',
+            component: () => import('@/views/QlusMapEditor.vue'),
+            meta: {
+                title: 'Qlus Map Editor',
+                transition: 'none'
             }
         }
     ]

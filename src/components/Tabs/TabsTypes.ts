@@ -1,4 +1,4 @@
 export interface TabComponent {
-    title: string;
-    component: any;
+    title: string
+    component: any
 }
