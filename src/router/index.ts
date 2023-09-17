@@ -74,7 +74,25 @@ const router = createRouter({
             component: () => import('@/views/QlusMapEditor.vue'),
             meta: {
                 title: 'Qlus Map Editor',
-                transition: 'none'
+                transition: 'dash'
+            }
+        },
+        {
+            path: '/STTT',
+            name: 'SUPER TURBO TURBO TURBO',
+            component: () => import('@/views/SuperTicTacToe.vue'),
+            meta: {
+                title: 'Tici Tici Tac uwu',
+                transition: 'dash'
+            }
+        },
+        {
+            path: '/FQG',
+            name: 'Flappy Qlus Game',
+            component: () => import('@/views/FlappyQlus.vue'),
+            meta: {
+                title: 'Flappy Qlus Game',
+                transition: 'fade'
             }
         }
     ]
